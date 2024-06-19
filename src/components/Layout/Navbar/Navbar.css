@@ -1,38 +1,44 @@
-.Navbar{
+.navbar {
     background: #29578b;
     width: 100vw;
     height: 56px;
-    position: relative;
     display: flex;
     align-items: center;
-}
-.logo{
-    position: absolute;
-    left: 45px;
-    display: flex;
-    align-items: center;
-    width: 10vw;
-    justify-content: space-evenly;
-    cursor: pointer;
-}
-.logo-head > p {
-    color: #000000; /* White color for high contrast against the background */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.8em; /* Slightly reduce font size for better proportion */
-    font-weight: 600; /* Maintain font weight for emphasis */
-    letter-spacing: 0.05em; /* Add subtle letter-spacing for readability */
-    margin: 0; /* Ensure no default margin is applied */
-    text-transform: uppercase; /* Make text uppercase for a more formal look */
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.Nav-menu{
-    position: absolute;
-    right: 36px;
+.logo {
     display: flex;
-    width: 8%;
-    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
 }
-.logo-image > .image{
-    width: 79%;
-    height: 100%;
+
+.logo-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-head {
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-icon {
+    color: white;
+    font-size: 2.2em;
+    cursor: pointer;
 }

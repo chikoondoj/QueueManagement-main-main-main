@@ -1,42 +1,36 @@
-import React from 'react'
-import illustrate from '../../Assets/logo1.svg'
-import './Navbar.css'
-import { useNavigate } from 'react-router-dom'
+import React from 'react';
+import illustrate from '../../Assets/logo1.svg';
+import './Navbar.css';
+import { useNavigate } from 'react-router-dom';
+
 const Navbar = () => {
     const navigate = useNavigate();
+
     const signingOut = () => {
         localStorage.clear();
         navigate("/login");
     }
 
-const qrScan = () => {
-    navigate("/qrcode");
-}
-const logoClick = () =>{
-    navigate("/");
-}
-    return (
-        <div className='Navbar'>
-            <div className='logo' onClick={logoClick}>
-                <div className='logo-image'>
-                    <img className="image" src={illustrate} alt="logo" />
-                </div>
-                <div className='logo-head'>
-                    <p>QJ&P</p>
-                </div>
+    const qrScan = () => {
+        navigate("/qrcode");
+    }
 
+    const logoClick = () => {
+        navigate("/");
+    }
+
+    return (
+        <div className='navbar'>
+            <div className='logo' onClick={logoClick}>
+                <img className="logo-image" src={illustrate} alt="logo" />
+                <p className='logo-head'>QJ&P</p>
             </div>
-            <div className='Nav-menu'>
-                <div className='sign-out' style={{order: "2"}} onClick={signingOut}>
-                    <i class="fa fa-sign-out" aria-hidden="true" style={{ color: "white", fontSize: "2.2em", cursor: "pointer" }}></i>
-                </div>
-                <div className='qr-code' style={{order: "1"}} onClick={qrScan}>
-                     <i class="fa fa-qrcode" aria-hidden="true" style={{ color: "white", fontSize: "2.2em", cursor: "pointer"}}></i>
-                </div>
-                {/* <LogoutIcon style={{color:"white"}} fontSize="large"/> */}
+            <div className='nav-menu'>
+                <i className="fa fa-qrcode nav-icon" aria-hidden="true" onClick={qrScan}></i>
+                <i className="fa fa-sign-out nav-icon" aria-hidden="true" onClick={signingOut}></i>
             </div>
         </div>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;
