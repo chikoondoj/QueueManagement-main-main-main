@@ -68,3 +68,93 @@ Here are the changes made to the CSS to enhance the professional and aesthetic a
    - ![Screenshot (11)](https://github.com/chikoondoj/QueueManagement-main/assets/171292021/d63d8f7c-17c9-4efa-ab09-7539dab3dff4)
    - 
  
+
+### Changes in React Component (`Details`)
+
+1. **State Management**:
+   - Introduced `selectedRole` state to keep track of which role (`Customer` or `Store`) is currently selected for visual feedback.
+   - Initialized `role` state to manage the selected role that will be used for form submission.
+
+   ```javascript
+   const [role, setRole] = useState(null);
+   const [selectedRole, setSelectedRole] = useState(null);
+   ```
+
+2. **Role Selection Handling**:
+   - Updated `onClick` handlers for `photo1-role` (Customer) and `photo2-role` (Store) to update both `role` and `selectedRole` states.
+
+   ```javascript
+   <div className='photo1-role' onClick={() => { setRole("customer"); setSelectedRole("customer"); }}>
+       Customer
+   </div>
+   <div className='photo2-role' onClick={() => { setRole("store"); setSelectedRole("store"); }}>
+       Store
+   </div>
+   ```
+
+3. **Visual Feedback**:
+   - Conditionally applied a `selected` class to `photo1-role` and `photo2-role` based on the `selectedRole` state to change their background color (or any other styling).
+
+   ```javascript
+   <div className={`photo1 ${selectedRole === "customer" ? "selected" : ""}`}>
+       {/* Customer content */}
+   </div>
+   <div className={`photo2 ${selectedRole === "store" ? "selected" : ""}`}>
+       {/* Store content */}
+   </div>
+   ```
+
+4. **Form Submission**:
+   - Updated the `onSubmit` function to check if a role has been selected (`role !== null`) before proceeding with form submission logic.
+
+   ```javascript
+   const onSubmit = (data, e) => {
+       // Form submission logic based on selected role
+   };
+   ```
+
+### Changes in CSS (`Detail.css`)
+
+1. **Added Selected State Styling**:
+   - Introduced a `.selected` class to change the background color (or any other style) of the selected role.
+
+   ```css
+   .photo1.selected .photo1-role,
+   .photo2.selected .photo2-role {
+       background-color: #41D3BD; /* Example selected color */
+       /* Add any other styling you want for selected state */
+   }
+   ```
+
+2. **Other CSS Adjustments**:
+   - You may adjust other styles as per your design requirements, ensuring visual consistency and clarity in role selection.
+
+   ```css
+   .photo1-role,
+   .photo2-role {
+       width: 10vw;
+       height: 5vh;
+       background: #41D3BD;
+       box-shadow: 0px 2.73786px 15px #C4C4C4;
+       border-radius: 68.4466px;
+       font-family: 'Source Sans Pro';
+       font-weight: 500;
+       font-size: 1.2em;
+       color: #FFFFFF;
+       display: grid;
+       place-items: center;
+       cursor: pointer;
+   }
+
+   .photo2-role {
+       background: #304D6D;
+       position: absolute;
+       top: 87%;
+   }
+
+   /* Add any other necessary styles */
+   ```
+
+### Summary
+
+These changes enable your React component to provide interactive feedback when the user selects their role (`Customer` or `Store`). The `selectedRole` state manages visual feedback, while the `role` state manages the actual role selected for form submission. CSS adjustments ensure that the selected role is visually distinguishable, enhancing the user experience by providing clear feedback on their selection. Adjustments can be further refined based on specific design requirements and user interface considerations.
