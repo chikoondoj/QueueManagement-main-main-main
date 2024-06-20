@@ -86,6 +86,7 @@
     font-size: 1.6em;
     cursor: pointer;
     box-shadow: 0px 0px 15px rgb(108 187 134 / 49%);
+    color: #ffffff;
 }
 
 .login-head{

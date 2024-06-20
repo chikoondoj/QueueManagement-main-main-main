@@ -1,4 +1,4 @@
-.Navbar{
+.Navbar {
     background: #29578b;
     width: 100vw;
     height: 56px;
@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
 }
-.logo{
+.logo {
     position: absolute;
     left: 45px;
     display: flex;
@@ -18,17 +18,60 @@
 .logo-head > p {
     font-size: 24px;
     margin-left: 10px;
-    color: #192839;
+    color: #ffffff;
     font-weight: 600;
 }
-
-.Nav-menu{
+.Nav-menu {
     position: absolute;
     right: 36px;
     display: flex;
-    width: 8%;
-    justify-content: space-around;
+    align-items: center;
 }
-.logo-image > .image{
+.logo-image > .image {
     height: 50px;
+}
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+.dropbtn {
+    background-color: #29578b;
+    color: #192839;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.dropbtn .flag {
+    width: 16px;  
+    height: 11px; 
+    margin-right: 5px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content div {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.dropdown-content div:hover {
+    background-color: #f1f1f1;
+}
+.dropdown-content .flag {
+    width: 16px; 
+    height: 11px; 
+    margin-right: 10px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }
