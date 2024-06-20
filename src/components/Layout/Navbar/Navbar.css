@@ -16,13 +16,10 @@
     cursor: pointer;
 }
 .logo-head > p {
-    color: #000000; /* White color for high contrast against the background */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.8em; /* Slightly reduce font size for better proportion */
-    font-weight: 600; /* Maintain font weight for emphasis */
-    letter-spacing: 0.05em; /* Add subtle letter-spacing for readability */
-    margin: 0; /* Ensure no default margin is applied */
-    text-transform: uppercase; /* Make text uppercase for a more formal look */
+    font-size: 24px;
+    margin-left: 10px;
+    color: #192839;
+    font-weight: 600;
 }
 
 .Nav-menu{
@@ -33,6 +30,5 @@
     justify-content: space-around;
 }
 .logo-image > .image{
-    width: 79%;
-    height: 100%;
+    height: 50px;
 }

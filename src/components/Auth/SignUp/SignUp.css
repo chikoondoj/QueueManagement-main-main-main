@@ -112,3 +112,8 @@
     font-size: 24px;
     cursor: pointer;
 }
+
+.Main-heading .image{
+    background: url("../../Assets/queue.jpeg") no-repeat;
+    background-size: cover;
+} 

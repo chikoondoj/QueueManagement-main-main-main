@@ -80,3 +80,13 @@
     color: #2b4057f3;
     font-size: 1.3em;
 }
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-logo {
+    max-width: 8rem;
+}
