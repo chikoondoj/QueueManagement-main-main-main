@@ -25,7 +25,7 @@
     width: 34vw;
 }
 .Main-heading > p > span{
-    color: #41D3BD;
+    color: #0934ac;
 }
 .input-login{
     height: 47vh;
@@ -80,7 +80,7 @@
     top: 90%;
     border-radius: 100px;
     border: 1px solid transparent;
-    background-color:#2162ac;
+    background-color:#0934ac;
     font-family: 'Source Sans Pro';
     font-weight: 900;
     font-size: 1.6em;
@@ -97,7 +97,7 @@
 }
 .login-head > u{
     cursor: pointer;
-    color: #41D3BD;
+    color: #0934ac;
 }
 .pic{
     margin-top: 2%;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './SignUp.css'
 import Navbar from '../../Layout/Navbar/Navbar'
 import { useForm } from 'react-hook-form'
-import image from '../../Assets/pic.svg'
+import image from '../../Assets/pic.png'
 import { useSelector, useDispatch } from 'react-redux'
 import * as actionCreators from '../../../redux/actions/AuthAction'
 import { useNavigate } from 'react-router-dom'
@@ -31,7 +31,7 @@ const SignUp = () => {
             dispatch(UnsetLoader())
             console.log(error);
         })
-        navigate("/Detail");
+        navigate("/otp");
     }
     const [toggle, setToggle] = useState(false);
     const [toggle1, setToggle1] = useState(false);
@@ -46,7 +46,7 @@ const SignUp = () => {
 
             <div className='middle-portion'>
                 <div className='Main-heading'>
-                    <p>Register to join Our Queues <span className='ques'>...</span></p>
+                    <p>Register and join our Queue <span className='ques'>...</span></p>
                 </div>
                 <form className='input-login' onSubmit={handleSubmit(onSubmit)}>
                     <div className='form-container'>
@@ -80,7 +80,9 @@ const SignUp = () => {
 
                 </form>
             </div>
-           
+            <div className='queue-img'>
+                <img className="pic" src={image} alt="logo" />
+            </div>
             
             </div>
         </>)

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../../Layout/Navbar/Navbar';
 import { useForm } from 'react-hook-form';
-import image from '../../Assets/pic.svg';
+import image from '../../Assets/pic.png';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import AuthService from '../../../services/API';
@@ -109,7 +109,9 @@ const Login = () => {
                     <p className='signup-head'>Create New Account <span onClick={handleClicked}>Signup</span></p>
                 </form>
             </div>
-           
+            <div className='queue-img'>
+                <img className="pic" src={image} alt="logo" />
+            </div>
         </div>
     );
 }

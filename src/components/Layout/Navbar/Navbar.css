@@ -1,5 +1,5 @@
 .navbar {
-    background: #29578b;
+    background: #0934ac;
     width: 100vw;
     height: 56px;
     display: flex;
@@ -28,7 +28,7 @@
     font-weight: 600;
     letter-spacing: 0.05em;
     margin: 0;
-    text-transform: uppercase;
+    text-transform: inherit;
 }
 
 .nav-menu {

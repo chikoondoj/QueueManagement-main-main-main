@@ -1,5 +1,5 @@
 import React from 'react';
-import illustrate from '../../Assets/logo1.svg';
+import illustrate from '../../Assets/standlogo.svg';
 import './Navbar.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className='navbar'>
             <div className='logo' onClick={logoClick}>
                 <img className="logo-image" src={illustrate} alt="logo" />
-                <p className='logo-head'>QJ&P</p>
+                <p className='logo-head'>Standard Bank</p>
             </div>
             <div className='nav-menu'>
                 <i className="fa fa-qrcode nav-icon" aria-hidden="true" onClick={qrScan}></i>

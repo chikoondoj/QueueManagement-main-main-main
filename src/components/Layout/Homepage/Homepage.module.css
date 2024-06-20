@@ -99,7 +99,7 @@
     margin-left: 5px;
     font-size: 12px;
     display: inline-block;
-    background-color: #1b00eb;
+    background-color: #0934ac;
     color: #faeded;
     width: 24px;
     height: 24px;
@@ -133,7 +133,7 @@
   .enterButton,
   .leaveButton {
     color: #faeded;
-    background: #1b00eb;
+    background: #0934ac;
     border-radius: 15px;
     border: none;
     padding: 4px 12px;
