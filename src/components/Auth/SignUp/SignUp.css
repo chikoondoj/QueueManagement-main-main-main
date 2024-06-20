@@ -25,7 +25,7 @@
     width: 34vw;
 }
 .Main-heading > p > span{
-    color: #0934ac;
+    color: #41D3BD;
 }
 .input-login{
     height: 47vh;
@@ -80,12 +80,13 @@
     top: 90%;
     border-radius: 100px;
     border: 1px solid transparent;
-    background-color:#0934ac;
+    background-color:#2162ac;
     font-family: 'Source Sans Pro';
     font-weight: 900;
     font-size: 1.6em;
     cursor: pointer;
     box-shadow: 0px 0px 15px rgb(108 187 134 / 49%);
+    color: #ffffff;
 }
 
 .login-head{
@@ -97,7 +98,7 @@
 }
 .login-head > u{
     cursor: pointer;
-    color: #0934ac;
+    color: #41D3BD;
 }
 .pic{
     margin-top: 2%;
@@ -112,3 +113,8 @@
     font-size: 24px;
     cursor: pointer;
 }
+
+.Main-heading .image{
+    background: url("../../Assets/queue.jpeg") no-repeat;
+    background-size: cover;
+} 

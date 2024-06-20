@@ -177,3 +177,40 @@
     cursor: pointer;
     box-shadow: 0px 0px 15px rgb(108 187 134 / 49%);
 }
+
+.photo1.selected .photo1-role,
+.photo2.selected .photo2-role {
+    background-color: #000cf0; /* Example selected color */
+    /* Add any other styling you want for selected state */
+}
+
+.photo2-role {
+    background: #304D6D;
+    position: absolute;
+    top: 87%;
+}
+
+.photo1-role,
+.photo2-role {
+    width: 10vw;
+    height: 5vh;
+    background: #41D3BD;
+    box-shadow: 0px 2.73786px 15px #C4C4C4;
+    border-radius: 68.4466px;
+    font-family: 'Source Sans Pro';
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.photo2-role {
+    background: #304D6D;
+    position: absolute;
+    top: 87%;
+}
+
+/* Add any other necessary styles */
+

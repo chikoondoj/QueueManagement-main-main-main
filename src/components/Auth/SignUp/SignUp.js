@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './SignUp.css'
 import Navbar from '../../Layout/Navbar/Navbar'
 import { useForm } from 'react-hook-form'
-import image from '../../Assets/pic.png'
+import logo2 from '../../Assets/logo2.png'
 import { useSelector, useDispatch } from 'react-redux'
 import * as actionCreators from '../../../redux/actions/AuthAction'
 import { useNavigate } from 'react-router-dom'
@@ -31,7 +31,7 @@ const SignUp = () => {
             dispatch(UnsetLoader())
             console.log(error);
         })
-        navigate("/otp");
+        navigate("/Detail");
     }
     const [toggle, setToggle] = useState(false);
     const [toggle1, setToggle1] = useState(false);
@@ -46,8 +46,13 @@ const SignUp = () => {
 
             <div className='middle-portion'>
                 <div className='Main-heading'>
-                    <p>Register and join our Queue <span className='ques'>...</span></p>
+                    <p>Register to join Our Queues <span className='ques'>...</span></p>
+                    <div className="queue-image"></div>
                 </div>
+                <div className='signUp-container'>
+                <div className="logo-container">
+          <img className="login-logo" src={logo2} alt="logo" /> {/* Updated logo usage */}
+        </div>
                 <form className='input-login' onSubmit={handleSubmit(onSubmit)}>
                     <div className='form-container'>
                         <div className='email'>
@@ -79,10 +84,10 @@ const SignUp = () => {
                     <p className='login-head'>Existing users <u onClick={handleClicked}>Login</u></p>
 
                 </form>
+                </div>
+                
             </div>
-            <div className='queue-img'>
-                <img className="pic" src={image} alt="logo" />
-            </div>
+           
             
             </div>
         </>)

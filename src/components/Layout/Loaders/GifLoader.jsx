@@ -7,7 +7,7 @@ const Loader = () => {
     <GifLoader
         loading={true}
         imageSrc={gif}
-        imageStyle={{width:"10%", marginTop:"20%"}}
+        imageStyle={{width:"20%", marginTop:"20%"}}
         overlayBackground="rgba(0,0,0,0.5)"
     />
   )

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../../Layout/Navbar/Navbar';
 import { useForm } from 'react-hook-form';
-import image from '../../Assets/pic.png';
+import logo2 from '../../Assets/logo2.png';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import AuthService from '../../../services/API';
@@ -55,10 +55,15 @@ const Login = () => {
             <div className='Navbar-Signup'>
                 <Navbar />
             </div>
-            <div className='middle-portion'>
+            <div className='middle-portion'> 
                 <div className='login-heading'>
                     <p>Welcome Back Dear customer  <span className='ques'>!</span></p>
+                    <div className="queue-image"></div>
                 </div>
+                <div className='login-container'>
+                <div className="logo-container">
+          <img className="login-logo" src={logo2} alt="logo" /> {/* Updated logo usage */}
+        </div>
                 <form className='input-login' onSubmit={handleSubmit(onSubmit)}>
                     <div className='radio-button'>
                         <div className='customer-radio'>
@@ -107,11 +112,11 @@ const Login = () => {
                     <p className='forgot' onClick={handleClick}><u>Forgot password ?</u></p>
                     <button className='signup-btn' type='submit'>Login</button>
                     <p className='signup-head'>Create New Account <span onClick={handleClicked}>Signup</span></p>
-                </form>
+                </form> 
+                </div>
+                
             </div>
-            <div className='queue-img'>
-                <img className="pic" src={image} alt="logo" />
-            </div>
+           
         </div>
     );
 }
