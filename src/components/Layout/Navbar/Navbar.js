@@ -59,13 +59,13 @@ const Navbar = () => {
               {language} <IoMdArrowDropdown />
             </button>
             <div className="dropdown-content">
-              <div onClick={() => changeLanguage("")}>
+              <div onClick={() => changeLanguage("English")}>
                 <img src={englishFlag} alt="English" className="flag" /> English
               </div>
-              <div onClick={() => changeLanguage("Portugues")}>
+              <div onClick={() => changeLanguage("Portuguese")}>
                 <img src={portugueseFlag} alt="Portuguese" className="flag" /> Portuguese
               </div>
-              <div onClick={() => changeLanguage("")}>
+              <div onClick={() => changeLanguage("French")}>
                 <img src={frenchFlag} alt="French" className="flag" /> French
               </div>
             </div>
