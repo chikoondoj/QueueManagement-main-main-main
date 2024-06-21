@@ -87,7 +87,7 @@ const Login = () => {
                                     value="store"
                                     id="field-store"
                                 />
-                                Store
+                                Bank
                             </label>
                         </div>
                         <p className='alerts'>{errors.aopt?.message}</p>

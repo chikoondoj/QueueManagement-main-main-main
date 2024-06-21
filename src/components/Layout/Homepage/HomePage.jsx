@@ -86,7 +86,7 @@ const HomePage = () => {
       />
 
       <div className={styles.homepageContainer}>
-        <h1 className={styles.mainHead}>Nearby Stores</h1>
+        <h1 className={styles.mainHead}>Nearby Banks</h1>
 
         <div className={styles.cards}>
           {filteredNearby.length === 0 ? (

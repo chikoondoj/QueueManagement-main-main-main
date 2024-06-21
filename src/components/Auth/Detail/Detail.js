@@ -101,7 +101,7 @@ const Details = () => {
                                 <img className="pic1" src={photo2} alt="Store" />
                             </div>
                             <div className='photo2-role' onClick={() => { setRole("store"); setSelectedRole("store"); }}>
-                                Store
+                                Bank
                             </div>
                         </div>
                     </div>
