@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Navbar from '../../Layout/Navbar/Navbar'
 import { useForm } from 'react-hook-form'
 import image from '../../Assets/pic.svg'
 import './ForgotPass.css'
 import AuthService from '../../../services/API'
 import { useSelector } from 'react-redux'
+
 const ResetPass = () => {
-    const { register, handleSubmit, formState: { errors }, reset } = useForm({
+    const { register, handleSubmit, formState: { errors } } = useForm({
         mode: "onTouched"
     });
-    const { pass } = useSelector((state) => state.AuthReducer);
+
     const onSubmit = (data, e) => {
         e.preventDefault();
         let obj = {
@@ -27,8 +28,10 @@ const ResetPass = () => {
                 console.log(e);
             })
     }
+
     const [toggle, setToggle] = useState(false);
     const [toggle1, setToggle1] = useState(false);
+
     return (
         <div className='Signup-Page'>
             <div className='Navbar-Signup'>

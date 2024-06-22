@@ -9,7 +9,7 @@ import { useDispatch } from 'react-redux';
 import { setLoader, UnsetLoader } from '../../../redux/actions/LoaderActions';
 
 const Login = () => {
-    const { register, handleSubmit, formState: { errors }, reset } = useForm({
+    const { register, handleSubmit, formState: { errors }} = useForm({
         mode: "onTouched"
     });
     const navigate = useNavigate();

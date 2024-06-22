@@ -1,4 +1,4 @@
-import React,{ useState,useEffect } from 'react'
+import React from 'react'
 import Navbar from '../../Layout/Navbar/Navbar'
 import { useForm } from 'react-hook-form'
 import image from '../../Assets/pic.svg'
