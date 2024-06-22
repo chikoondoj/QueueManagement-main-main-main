@@ -1,0 +1,15 @@
+title: My Jekyll Site
+description: >- 
+  This is a sample description of my Jekyll site.
+baseurl: "" 
+url: "http://yourdomain.com"
+
+markdown: kramdown
+theme: minima
+
+sass:
+  sass_dir: assets/css
+
+author:
+  name: Pedro & James
+  email: phugo.pereira14@gmail.com
